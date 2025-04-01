@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑得快计分器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>跑得快计分器</h1>
+        </header>
+        
+        <main>
+            <section class="player-section">
+                <h2>玩家信息</h2>
+                <div class="player-list" id="playerList">
+                    <div class="player-input">
+                        <input type="text" placeholder="玩家名称" class="player-name">
+                        <button class="add-player">添加玩家</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="score-section">
+                <h2>计分板</h2>
+                <div class="score-board" id="scoreBoard">
+                    <!-- 计分板内容将由JavaScript动态生成 -->
+                </div>
+                <div class="score-controls">
+                    <button class="new-round">新一轮</button>
+                    <button class="finish-game">结束游戏</button>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h2>历史记录</h2>
+                <div class="history-list" id="historyList">
+                    <!-- 历史记录将由JavaScript动态生成 -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
